@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>진단 원리 · BeautyPalette</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="analysis">
+
+  <header class="page-head">
+    <p class="eyebrow">Analysis</p>
+    <h1 class="section-title">How We Analyze</h1>
+    <p class="lead">BeautyPalette는 설문 답변을 점수로 바꿔 퍼스널 컬러를 판정하고, 얼굴 분석·추구미와 조합해 추천을 만들어요.</p>
+  </header>
+
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      <div class="flow">
+        <div><h3>셀프 체크</h3><p>퍼스널 컬러 7문항 · 얼굴 분석 4문항 · 추구미 1문항</p></div>
+        <div><h3>점수 계산</h3><p>답변마다 warm/cool, light/deep 점수를 더해요.</p></div>
+        <div><h3>타입 판정</h3><p>온도 × 명도 조합으로 4계절 타입을 결정해요.</p></div>
+        <div><h3>맞춤 추천</h3><p>계절 × 얼굴 × 추구미로 제품과 메이크업 팁을 매칭해요.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Scoring</p>
+        <h2 class="section-title k">퍼스널 컬러 판정 방식</h2>
+      </div>
+      <div class="table-scroll">
+        <table class="score-table">
+          <thead><tr><th>문항</th><th>답변 예시</th><th>점수</th></tr></thead>
+          <tbody>
+            <tr><td>피부색</td><td>밝고 노르스름 / 밝고 핑크빛</td><td>warm+1·light+1 / cool+1·light+1</td></tr>
+            <tr><td>손목 혈관</td><td>초록빛 / 파란빛</td><td>warm+2 / cool+2</td></tr>
+            <tr><td>액세서리</td><td>골드 / 실버</td><td>warm+1 / cool+1</td></tr>
+            <tr><td>햇볕 반응</td><td>잘 탄다 / 붉어진다</td><td>warm+1 / cool+1</td></tr>
+            <tr><td>눈동자 · 머리카락</td><td>밝은 갈색 / 짙은 흑갈색</td><td>light+1 / deep+1</td></tr>
+            <tr><td>어울리는 옷 색</td><td>파스텔 / 진한 색 / 옐로 / 블루</td><td>light / deep / warm / cool +1</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-scroll" style="margin-top:24px">
+        <table class="score-table">
+          <thead><tr><th>판정</th><th>Light 우세</th><th>Deep 우세</th></tr></thead>
+          <tbody>
+            <tr><td><b>Warm 우세</b></td><td>봄 웜 (Spring)</td><td>가을 웜 (Autumn)</td></tr>
+            <tr><td><b>Cool 우세</b></td><td>여름 쿨 (Summer)</td><td>겨울 쿨 (Winter)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">4 Seasons</p>
+        <h2 class="section-title">Seasonal Palettes</h2>
+      </div>
+      <div class="season-grid" id="season-list"></div>
+      <div style="text-align:center;margin-top:48px">
+        <a href="test.html" class="btn">나의 타입 진단하기 <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
